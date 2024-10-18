@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+  float nivel_atual, nivel_minimo = 10.0, nivel_maximo = 20.0;
+
+  // Leitura do nível do tanque
+  printf("Informe o nível atual do tanque: ");
+  scanf("%f", &nivel_atual);
+
+  // Verifica o nível do tanque e exibe a mensagem adequada
+  if (nivel_atual < nivel_minimo) {
+    printf("Nível do tanque baixo! Favor abastecer o tanque.\n");
+  } else if (nivel_atual > nivel_maximo) {
+    printf("Nível do tanque alto! Favor desligar o bombeamento.\n");
+  } else {
+    printf("Nível do tanque normal.\n");
+  }
+
+  return 0;
+}
